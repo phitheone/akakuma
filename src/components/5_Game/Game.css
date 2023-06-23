@@ -1,0 +1,23 @@
+.A1Main {
+  height: 100vh;
+  background-color: rgb(212, 255, 127);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.VideoContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 45%;
+  transform: translateY(-75px) translateX(-12px);
+  padding: 20px;
+  border-radius: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+
+  /* border: solid lime 1px; */
+}

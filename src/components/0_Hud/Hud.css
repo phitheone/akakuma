@@ -1,0 +1,88 @@
+.HudContainer {
+}
+
+.HudElement {
+  position: fixed;
+}
+
+.HudElement img {
+}
+
+.HLogo {
+  left: 20px;
+  top: 20px;
+}
+
+.HLogo img {
+  height: 80px;
+}
+
+.HMenu {
+  right: 20px;
+  top: 20px;
+}
+
+.HMenu img {
+  height: 40px;
+  z-index: 10;
+}
+
+.HMusic {
+  left: 20px;
+  bottom: 20px;
+}
+
+.HMusic img {
+  height: 80px;
+}
+
+.HSocials {
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 140px;
+}
+
+.HSocials img {
+  height: 40px;
+}
+
+.MenuScroll {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  border: solid lime 1px;
+}
+
+.MenuScroll img {
+  height: 100vh;
+  /* position: fixed; */
+}
+
+.CloseBtn {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  height: 60px;
+  width: 60px;
+
+  border: solid red 1px;
+}
+
+.NavigationBtns {
+  position: absolute;
+  top: 180px;
+  right: 20px;
+  height: 50vh;
+  width: 70%;
+
+  border: solid purple 1px;
+}
+
+.NavigationBtns img {
+  height: 60px;
+}

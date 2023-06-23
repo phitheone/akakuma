@@ -1,0 +1,31 @@
+.A1Main {
+  position: relative;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* height: 210vh; */
+
+  /* border: solid red 2px; */
+}
+
+.AboutContent {
+  position: relative;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 600px;
+}
+
+.AboutContent h2 {
+  font-size: 42px;
+  font-family: "Lilita One", cursive;
+}
+
+.AboutContent p {
+  margin: 0;
+  font-size: 24px;
+}

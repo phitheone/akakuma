@@ -1,0 +1,34 @@
+.A1Main {
+  height: 100vh;
+  background-color: rgb(212, 255, 127);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SwiperContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 50%;
+  transform: translateY(-150px);
+  padding: 20px;
+  border-radius: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+
+  /* border: solid lime 1px; */
+}
+
+.SliderContainer img {
+  height: 200px;
+}
+
+.ImgTest {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  border: solid red 1px;
+}

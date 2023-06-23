@@ -1,0 +1,104 @@
+.A1Main {
+  height: 100vh;
+  background-color: rgb(212, 255, 127);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoreContainer {
+  position: relative;
+  transform: translateX(-300px);
+  overflow: hidden;
+
+  border: solid red 1px;
+}
+
+.LoreContent {
+  color: black;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.LoreBg {
+  height: 650px;
+}
+
+.LoreIntro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 550px;
+  width: 630px;
+
+  border: solid magenta 1px;
+}
+
+.LoreScrolls {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.LoreScrolls img {
+  height: 200px;
+  transition: 0.3s;
+}
+
+.LoreScrolls img:hover {
+  scale: 1.1;
+}
+
+.Scroll1 {
+  animation: floating1 2s ease-in-out infinite;
+}
+
+.Scroll2 {
+  animation: floating1 4s ease-in-out infinite;
+}
+
+.Scroll3 {
+  animation: floating1 3s ease-in-out infinite;
+}
+
+@keyframes floating1 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.Chapter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.StoryArrows img {
+  height: 100px;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+.StoryArrows img:hover {
+  scale: 1.1;
+}
+
+.C1E1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+}
+
+.C1E1 img {
+  height: 100px;
+}

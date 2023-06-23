@@ -1,0 +1,38 @@
+.FooContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 35vh;
+  background: black;
+  text-align: center;
+
+  /* border: solid lime 1px; */
+}
+
+.FooContainer img {
+  height: 120px;
+}
+
+.FooCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+
+  /* border: solid red 1px; */
+}
+
+.FooSocials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 170px;
+
+  /* border: solid red 1px; */
+}
+
+.FooSocials img {
+  height: 40px;
+}

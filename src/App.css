@@ -1,38 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Lilita+One&display=swap");
+
+/*
+font-family: 'Acme', sans-serif;
+font-family: 'Lilita One', cursive;
+*/
+
+body {
+  margin: 0;
+  cursor: url(./images/mouse1.png), auto;
+  /* cursor: url(./images/mouse2.png) 9 9, pointer; */
+  background-color: rgb(255, 255, 255);
+  font-family: "Acme", sans-serif;
+  color: white;
+
+  --color1: #d67027;
+  --color2: #f4ed98;
+}
+
 .App {
   text-align: center;
+
+  /* min-height: 200vh; */
+  /* overflow: hidden; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.MainParallax {
+  background-image: url(./images/Fondo.png);
+  /* overflow: hidden; */
+  /* height: 5000px; */
+
+  /* border: solid red 1px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .Cloud1 {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  border: solid red 1px;
+} */
+
+.ImagesP {
+  height: 3000px;
 }
 
-.App-link {
-  color: #61dafb;
+.ImagesP img {
+  position: absolute;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* .Floating {
+  animation: floaty 4s ease-in-out infinite;
+} */
+
+@keyframes floaty {
+  0% {
+    transform: translateY(0px);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+.DownBtn {
+  cursor: url(./images/mouse2.png), pointer;
+}
+
+.Socials {
+  position: fixed;
+  top: 10px;
+  right: 100px;
+  display: flex;
+  flex-direction: row;
+  width: 160px;
+  align-items: center;
+  justify-content: space-between;
+}
+/* 
+.Socials img {
+  cursor: url(./images/mouse2.png), pointer;
+  height: 41px;
+  transition: 0.3s ease-in-out;
+}
+
+.Socials img:hover {
+  filter: invert(44%) sepia(92%) saturate(516%) hue-rotate(149deg)
+    brightness(97%) contrast(107%);
+} */
+
+.LT img {
+  cursor: url(./images/mouse2.png), pointer;
+  height: 41px;
+  transition: 0.3s ease-in-out;
+}
+
+.LT img:hover {
+  filter: brightness(0) saturate(100%) invert(55%) sepia(99%) saturate(1778%)
+    hue-rotate(344deg) brightness(88%) contrast(89%);
+}
+
+.TW img {
+  cursor: url(./images/mouse2.png), pointer;
+  height: 41px;
+  transition: 0.2s ease-in-out;
+}
+
+.TW img:hover {
+  filter: brightness(0) saturate(100%) invert(55%) sepia(99%) saturate(1778%)
+    hue-rotate(344deg) brightness(88%) contrast(89%);
+}
+
+.DC img {
+  cursor: url(./images/mouse2.png), pointer;
+  height: 41px;
+  transition: 0.3s ease-in-out;
+}
+
+.DC img:hover {
+  filter: brightness(0) saturate(100%) invert(55%) sepia(99%) saturate(1778%)
+    hue-rotate(344deg) brightness(88%) contrast(89%);
+}
+
+.SkipBtn {
+  position: fixed;
+  bottom: 0px;
+  right: 100px;
+}
+
+.SkipBtn img {
+  height: 150px;
+  transform: translateY(10px);
+  /* cursor: pointer; */
+  cursor: url(./images/mouse2.png), pointer;
+}
+
+.InviDoor {
+  cursor: url(./images/mouse2.png) 9 9, pointer;
+}
+
+.AirAnim {
+  position: fixed;
+  bottom: 500px;
+  right: 0px;
+  animation: windy 6s ease-out infinite;
+}
+
+@keyframes windy {
+  0% {
+    transform: translateY(300px) translateX(2000px);
+    height: 1025px;
+    rotate: 0deg;
+    opacity: 0;
+  }
+  5% {
+    transform: translateY(300px) translateX(2000px);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-260px) translateX(-200px);
+    height: 1325px;
+    rotate: 10deg;
+  }
+  55% {
+    transform: translateY(-180px) translateX(-60px);
+    rotate: 10deg;
+    height: 1200px;
+  }
+  75% {
+    height: 825px;
+  }
+  95% {
+    transform: translateY(-280px) translateX(-2500px);
+    height: 1325px;
+    rotate: 10deg;
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px) translateX(-2500px);
+    opacity: 0;
+  }
+}
+
+.AirAnim2 {
+  position: fixed;
+  bottom: 500px;
+  right: 0px;
+  opacity: 0;
+  animation: windy2 5s ease-out infinite 3s;
+}
+
+@keyframes windy2 {
+  0% {
+    transform: translateY(-3500px) translateX(2000px);
+    height: 625px;
+    rotate: 0deg;
+    opacity: 0;
+  }
+  5% {
+    transform: translateY(-3500px) translateX(2000px);
+    opacity: 1;
+  }
+  95% {
+    transform: translateY(1900px) translateX(-1500px);
+    height: 1325px;
+    rotate: 50deg;
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(1900px) translateX(-1500px);
+    opacity: 0;
   }
 }
